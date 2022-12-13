@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <script src="minitas.js"></script>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Busca Minas 🚩💣❔😃😖🔍</title>
+        <link rel="icon" href="img/minesweeper-icon.png" sizes="100%" type="image/png">
+
+    </head>
+
+    <body>
+        <div id="BgFondo">
+            <video id="BgVideo" autoplay loop muted plays-inline>
+                <source media="(min-width: )" src="img/video-BG.mp4" type="video/mp4">
+            </video>
+        </div>
+        <nav id="Init">
+            <div id="title">
+                <h1>BUSCAMINAS</h1>
+                <p>Choose your world</p>
+            </div>
+            <button type="button" onclick="CONTROL('DF-Beginner')">Beginner</button>
+            <button type="button" onclick="CONTROL('DF-Intermediate')">Intermediate</button>
+            <button type="button" onclick="CONTROL('DF-Expert')">Expert</button>
+            <button type="button" onclick="CustomPlay()">Custom</button>
+        </nav>
+        <div id="tabla">
+            <table id="show">
+                <tbody>
+                    <tr>
+                        <td id="mines-show">000</mark></td>
+                        <td id="midle-show">😃</td>
+                        <td id="time-show">000</td>
+                    </tr>
+                </tbody>
+            </table>
+            <table id="minesT"></table>
+        </div>
+    </body>
+</html>
